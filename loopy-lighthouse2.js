@@ -25,7 +25,7 @@ const loopyLighthouse2 = function(range, multiples, words) {
     word1: words[0],
     word2: words[1]
   };
-  for (let i = obj.bottom; i < obj.top; ++i) {
+  for (let i = obj.bottom; i <= obj.top; ++i) {
     let word = "";
     i % obj.multi1 === 0 ? (word += obj.word1) : null;
     i % obj.multi2 === 0 ? (word += obj.word2) : null;
